@@ -15,10 +15,17 @@ from models.opportunity import getAllOpportunities, getOpportunity, getOpportuni
 from matching import getMatchScore, getMatchedSkills, getRecommendedPostings, getRecommendedRoles, getCareerRoadmap, getPercentile, getStudentNotifications
 
 app = Flask(__name__)
+
 os.makedirs("resumes", exist_ok=True)
+
 app.secret_key = "skillsetusecretkey123"
 
 app.config.from_object(Config)
+
+app.config.update(
+    SESSION_COOKIE_SECURE=True,
+    SESSION_COOKIE_SAMESITE="None"
+)
 
 CORS(
     app,
