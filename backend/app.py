@@ -23,7 +23,10 @@ app.config.from_object(Config)
 CORS(
     app,
     supports_credentials=True,
-    origins=["http://localhost:5173"]
+    origins=[
+    "http://localhost:5173",
+    "https://skillsetu-1-qp6o.onrender.com"
+]
 )
 
 
