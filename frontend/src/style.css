@@ -1,0 +1,132 @@
+:root {
+  --maroon: #781F19;
+  --gold: #D6A64F;
+  --cream: #FDF8F0;
+}
+
+body {
+  background-color: var(--cream);
+}
+
+.card {
+  border: none;
+}
+
+.navbar-brand {
+  font-weight: 600;
+}
+
+table td, table th {
+  vertical-align: middle;
+}
+
+.bg-maroon {
+  background-color: var(--maroon);
+}
+
+.text-maroon {
+  color: var(--maroon);
+}
+
+.text-gold {
+  color: var(--gold);
+}
+
+.btn-maroon {
+  background-color: var(--maroon);
+  color: #fff;
+}
+
+.btn-maroon:hover {
+  background-color: #5d1813;
+  color: #fff;
+}
+
+.btn-outline-maroon {
+  border: 1px solid var(--maroon);
+  color: var(--maroon);
+}
+
+.btn-outline-maroon:hover {
+  background-color: var(--maroon);
+  color: #fff;
+}
+
+.nav-pills .nav-link.active {
+  background-color: var(--maroon);
+}
+
+.nav-pills .nav-link {
+  color: var(--maroon);
+}
+
+.list-group-item.active {
+  background-color: var(--maroon);
+  border-color: var(--maroon);
+}
+
+.badge-gold {
+  background-color: var(--gold);
+  color: #3b2200;
+}
+
+.brand-logo {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--gold);
+  color: var(--maroon);
+  text-align: center;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.tagline {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: var(--gold);
+}
+
+.bar-track {
+  background-color: #eee;
+  border-radius: 4px;
+  height: 18px;
+  width: 100%;
+}
+
+.bar-fill {
+  background-color: var(--maroon);
+  border-radius: 4px;
+  height: 18px;
+}
+
+.bar-fill-gold {
+  background-color: var(--gold);
+  border-radius: 4px;
+  height: 18px;
+}
+
+.roadmap-step {
+  border-left: 3px solid #ddd;
+  padding-left: 15px;
+  padding-bottom: 18px;
+}
+
+.roadmap-step.done {
+  border-left: 3px solid var(--maroon);
+}
+
+.roadmap-dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ddd;
+  margin-left: -22px;
+  margin-right: 8px;
+}
+
+.roadmap-dot.done {
+  background-color: var(--maroon);
+}
