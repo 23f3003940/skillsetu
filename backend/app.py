@@ -28,7 +28,7 @@ CORS(
     "https://skillsetu-1-qp6o.onrender.com"
 ]
 )
-
+init_db()
 
 def admin_required():
     return "user" in session and session["user"]["role"] == "admin"
