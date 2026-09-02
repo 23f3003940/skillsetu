@@ -1,5 +1,5 @@
-// Backend runs separately on port 5000 (see backend/app.py)
-const BASE_URL = "http://localhost:5000";
+
+const BASE_URL = "https://skillsetu-scd2.onrender.com";
 
 async function apiGet(url) {
   const res = await fetch(BASE_URL + url, { credentials: "include" });
